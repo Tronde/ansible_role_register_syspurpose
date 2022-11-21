@@ -1,0 +1,12 @@
+---
+# tasks file for register_syspurpose
+- name: Register system to RHSM and set syspurpose attributes
+  redhat_subscription:
+    state: present
+    activationkey: "{{ register_syspurpose_activationkey }}"
+    org_id: "{{ register_syspurpose_org_id }}"
+    syspurpose:
+      role: "{{ register_syspurpose_role }}"
+      service_level_agreement: "{{ register_syspurpose_sla }}"
+      usage: "{{ register_syspurpose_usage }}"
+      sync: true

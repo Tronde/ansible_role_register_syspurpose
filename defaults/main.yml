@@ -1,0 +1,7 @@
+---
+# defaults file for register_register_syspurpose
+register_syspurpose_activationkey: # The name of your activation key
+register_syspurpose_org_id: "12345678" # Your Org ID
+register_syspurpose_role: "Red Hat Enterprise Linux Server"
+register_syspurpose_sla: "Self-Support"
+register_syspurpose_usage: "Development/Test"
